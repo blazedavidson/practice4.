@@ -26,10 +26,10 @@ public class config {
         try {
             Connection conn = dataSource.getConnection();
             Statement st = conn.createStatement();
-            st.execute( "CREATE SCHEMA IF NOT EXISTS POSTGRES");
-            st.execute( "SET SCHEMA POSTGRES");
-            st.execute( "CREATE TABLE USERS( id int auto_increment PRIMARY KEY, username varchar(50), fio varchar(100) );");
-            st.execute( "CREATE TABLE LOGINS(id int auto_increment PRIMARY KEY, access_date date NOT NULL, user_id int , application varchar(100), CONSTRAINT fk_id FOREIGN KEY (user_id)  REFERENCES users(id) );");
+            st.execute( "CREATE SCHEMA IF NOT EXISTS postgres");
+            st.execute( "SET SCHEMA postgres");
+            st.execute( "CREATE TABLE users( id int auto_increment PRIMARY KEY, username varchar(50), fio varchar(100) );");
+            st.execute( "CREATE TABLE logins(id int auto_increment PRIMARY KEY, access_date date NOT NULL, user_id int , application varchar(100), CONSTRAINT fk_id FOREIGN KEY (user_id)  REFERENCES users(id) );");
         }
         catch ( SQLException ex) { throw new RuntimeException( "table not created!"); }
         return dataSource;
