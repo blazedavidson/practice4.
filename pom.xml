@@ -97,7 +97,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- для подключения конкретной реализации протокола -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
@@ -108,7 +107,7 @@
             <artifactId>log4j-api</artifactId>
             <version>2.22.0</version>
         </dependency>
-<!--
+
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
@@ -120,14 +119,14 @@
             <artifactId>jakarta.persistence-api</artifactId>
             <version>3.0.0</version>
         </dependency>
--->
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-<!-- или отдельно подключаем jakarta.validation и jakarta.persistence -->
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core-jakarta</artifactId>

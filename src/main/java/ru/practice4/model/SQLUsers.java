@@ -16,18 +16,18 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Table(name = "users", schema = "postgres")
+@Table(name = "USERS", schema = "POSTGRES")
 public class SQLUsers {
     @Id()
     @GeneratedValue( strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "ID")
     private long id;
-    @Column(name = "username")
+    @Column(name = "USERNAME")
     private String username;
-    @Column(name = "fio")
+    @Column(name = "FIO")
     private String fio;
     @Override
     public String toString() {
-        return "Users{" + "id=" + id + ", username='" + username + '\'' + ", fio='" + fio + '\'' + '}';
+        return "Users{" + "ID=" + id + ", USERNAME='" + username + '\'' + ", FIO='" + fio + '\'' + '}';
     }
 }

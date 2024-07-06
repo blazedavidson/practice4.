@@ -1,12 +1,5 @@
-FileFullNameControl:{14.01.2024 16:01:31 time 0 ms}
-example.txt(1)loginex Черенков И С 05.05.2024 application1
-example.txt(2)loginex Черенков И С 06.05.2024 application2
-example.txt(3)loginex Черенков И С 07.05.2024 application3
-FileFullNameControl:{14.25.2024 16:25:44 time 0 ms}
-example.txt(1)loginex Черенков И С 05.05.2024 application1
-example.txt(2)loginex Черенков И С 06.05.2024 application2
-example.txt(3)loginex Черенков И С 07.05.2024 application3
-FileFullNameControl.txt(1)FileFullNameControl:{14.01.2024 16:01:31 Time 0 ms} 
-FileFullNameControl.txt(2)example.txt(1)loginex Черенков И С 05.05.2024 application1
-FileFullNameControl.txt(3)example.txt(2)loginex Черенков И С 06.05.2024 application2
-FileFullNameControl.txt(4)example.txt(3)loginex Черенков И С 07.05.2024 application3
+FileFullNameControl:{06.35.2024 17:35:51 time 0 ms}
+example.txt(1)CHIS Черенков Игорь Сергеевич 06.07.2024 Opera11
+FileFullNameControl.txt(1)FileFullNameControl:{06.35.2024 17:35:23 Time 0 ms} 
+FileFullNameControl.txt(2)example.txt(1)CHIS Черенков Игорь Сергеевич 06.07.2024 Opera11
+FileFullNameControl.txt(4)FileFullNameControl.txt(2)example.txt(1)CHIS Черенков Игорь Сергеевич 06.07.2024 Opera11

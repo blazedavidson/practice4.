@@ -9,12 +9,10 @@ import ru.practice4.beans.*;
 @EnableJpaRepositories( basePackageClasses = { SelectUsers.class, SelectLogins.class})
 public class Main {
     public static void main(String[] args) {
-
         String src = "src/main/resources";
         System.setProperty( "DB", "jdbc:postgresql://localhost:5432/postgres");
         System.setProperty( "USER", "postgres");
         System.setProperty( "PASS", "blaze");
-
 
         ApplicationContext app = SpringApplication.run(Main.class, args);
         FilesReadData fileData = app.getBean(FilesReadData.class);
@@ -23,6 +21,7 @@ public class Main {
         readData.invoke(src);
         FileFullNameControl nameControl = app.getBean(FileFullNameControl.class);
         nameControl.invoke();
+
 
     }
 }

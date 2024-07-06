@@ -35,7 +35,6 @@ public class SQLUpdate {
                 catch (Exception ex) {continue;}
                 sqlLogin.setAccessDate(dDate);
                 lg.save( sqlLogin);
-
             }
         }
     }

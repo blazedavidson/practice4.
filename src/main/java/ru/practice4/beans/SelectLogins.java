@@ -10,7 +10,7 @@ import org.springframework.data.jdbc.repository.query.Modifying;
 @Repository
 public interface SelectLogins extends CrudRepository<SQLLogins, Long> {
     @Modifying
-    @Query("delete from my_postgres.logins lg where lg.user_id = :userId")
+    @Query("delete from POSTGRES.LOGINS lg where lg.USER_ID = :userId")
     void deleteLoginsForUserId(@Param("userId") Long userId);
 
     long countByUserId( Long userId);

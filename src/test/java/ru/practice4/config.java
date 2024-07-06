@@ -10,6 +10,7 @@ import org.springframework.core.env.Environment;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 @Configuration
 @PropertySource("classpath:h2.properties")
 @EnableTransactionManagement
@@ -26,10 +27,10 @@ public class config {
         try {
             Connection conn = dataSource.getConnection();
             Statement st = conn.createStatement();
-            st.execute( "CREATE SCHEMA IF NOT EXISTS postgres");
-            st.execute( "SET SCHEMA postgres");
-            st.execute( "CREATE TABLE users( id int auto_increment PRIMARY KEY, username varchar(50), fio varchar(100) );");
-            st.execute( "CREATE TABLE logins(id int auto_increment PRIMARY KEY, access_date date NOT NULL, user_id int , application varchar(100), CONSTRAINT fk_id FOREIGN KEY (user_id)  REFERENCES users(id) );");
+            st.execute( "CREATE SCHEMA IF NOT EXISTS POSTGRES");
+            st.execute( "SET SCHEMA POSTGRES");
+            st.execute( "CREATE TABLE USERS( ID int auto_increment PRIMARY KEY, USERNAME varchar(50), FIO varchar(100) );");
+            st.execute( "CREATE TABLE LOGINS(ID int auto_increment PRIMARY KEY, ACCESS_DATE date NOT NULL, USER_ID int , APPLICATION varchar(100), CONSTRAINT fk_id FOREIGN KEY (USER_ID)  REFERENCES users(ID) );");
         }
         catch ( SQLException ex) { throw new RuntimeException( "table not created!"); }
         return dataSource;

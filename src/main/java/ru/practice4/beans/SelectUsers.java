@@ -10,7 +10,7 @@ import java.util.Set;
 @Repository
 public interface SelectUsers extends CrudRepository<SQLUsers, Long> {
 
-    @Query("SELECT * FROM my_postgres.users s WHERE s.username like :username")
+    @Query("SELECT * FROM POSTGRES.USERS s WHERE s.USERNAME like :username")
     Set<SQLUsers> findMyUsersByUsername(@Param("username") String username);
     SQLUsers findFirstByUsername(String username);
     long countByUsername( String userName);

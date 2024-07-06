@@ -13,22 +13,22 @@ import java.util.Date;
 @Getter
 @Setter
 
-@Table(name = "logins", schema = "postgres")
+@Table(name = "LOGINS", schema = "POSTGRES")
 public class SQLLogins {
     @Id
     @GeneratedValue( strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "ID")
     long id;
-    @Column(name = "access_date")
+    @Column(name = "ACCESS_DATE")
     Date accessDate;
-    @Column(name = "user_id")
+    @Column(name = "USER_ID")
     @ManyToOne(targetEntity = SQLUsers.class)
     long userId;
-    @Column(name = "application")
+    @Column(name = "APPLICATION")
     String application;
     @Override
     public String toString() {
-        return "Logins{" + "id=" + id + ", user_id=" + userId + '\'' + ", access_date='" + accessDate + '\'' + ", application='" + application + '\'' + '}';
+        return "Logins{" + "ID=" + id + ", USER_ID=" + userId + '\'' + ", ACCESS_DATE='" + accessDate + '\'' + ", APPLICATION='" + application + '\'' + '}';
     }
 }
 
